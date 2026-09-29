@@ -10,6 +10,8 @@ function dispatchCooling(array $commands): void {
         switch ($cmd) {
             // ==========================================
             // 【指示】下の case "WAIT": 行を自分の case を追加せよ！
+            // 担当A: case "WATER_INJECT": $coolant = true; break;
+            case "NITROGEN_BLAST": $gas = true; break;
             case "WATER_INJECT": $coolant = true; break;
             // 担当B: case "NITROGEN_BLAST": $gas = true; break;
             case "WAIT": break; // ← これは残す
